@@ -21,7 +21,7 @@ from markdown_deadlink_checker.parser import ParsedDocument, parse_markdown
 from markdown_deadlink_checker.slugify import DocumentAnchors
 
 
-MARKDOWN_EXTENSIONS = {".md", ".markdown", ".mdown", ".mkd", ".mkdn"}
+MARKDOWN_EXTENSIONS = {".md", ".markdown", ".mdown", ".mkd", ".mkdn", ".mdx"}
 
 DEFAULT_IGNORE_PATHS = [
     "**/.git/**",
