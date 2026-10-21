@@ -130,4 +130,9 @@ HTML Img: <img src="icons/check.svg">
 def test_classify_target_additional_special_schemes():
     assert classify_target('irc://chat.freenode.net/python')[0] == LinkType.SPECIAL
     assert classify_target('data:image/png;base64,iVBORw0KGgo')[0] == LinkType.SPECIAL
+    assert classify_target('sms:+15551234567')[0] == LinkType.SPECIAL
+    assert classify_target('ssh://user@server.com/repo')[0] == LinkType.SPECIAL
+    assert classify_target('git://github.com/org/repo.git')[0] == LinkType.SPECIAL
+    assert classify_target('magnet:?xt=urn:btih:d3b07384d113edec49eaa6238ad5ff00')[0] == LinkType.SPECIAL
+    assert classify_target('urn:isbn:0451450523')[0] == LinkType.SPECIAL
 

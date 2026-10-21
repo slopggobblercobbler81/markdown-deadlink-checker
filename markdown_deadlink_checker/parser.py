@@ -133,7 +133,7 @@ def classify_target(raw_target: str, is_image: bool = False) -> Tuple[LinkType, 
     
     # Check special protocols
     lower = target.lower()
-    if lower.startswith(("mailto:", "tel:", "javascript:", "data:", "irc:")):
+    if lower.startswith(("mailto:", "tel:", "sms:", "javascript:", "data:", "irc:", "ssh:", "git:", "magnet:", "urn:")):
         return LinkType.SPECIAL, None, None
 
     # Check external URLs
