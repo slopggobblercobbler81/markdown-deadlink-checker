@@ -56,3 +56,8 @@ def test_document_anchors():
     assert doc.contains("cafe-food") or doc.contains("café-food") or doc.contains("café--food") or doc.contains("cafe--food")
 
     assert not doc.contains("non-existent-anchor")
+
+
+def test_slugify_consecutive_symbols():
+    assert slugify_heading('Foo -- Bar -> Baz') == 'foo----bar---baz'
+
