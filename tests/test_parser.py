@@ -125,3 +125,9 @@ HTML Img: <img src="icons/check.svg">
     # 6. HTML img
     assert doc.links[5].file_path == "icons/check.svg"
     assert doc.links[5].is_image is True
+
+
+def test_classify_target_additional_special_schemes():
+    assert classify_target('irc://chat.freenode.net/python')[0] == LinkType.SPECIAL
+    assert classify_target('data:image/png;base64,iVBORw0KGgo')[0] == LinkType.SPECIAL
+
