@@ -209,6 +209,19 @@ pytest
 
 ---
 
+## 🧭 Companion Tools & Ecosystem Cross-References
+
+`markdown-deadlink-checker` forms part of a cohesive documentation hygiene toolkit:
+
+- **Upstream Documentation Companions:**
+  - [`lycheeverse/lychee`](https://github.com/lycheeverse/lychee) — Fast, asynchronous link checker for Markdown, HTML, and code comments.
+  - [`pre-commit/pre-commit-hooks`](https://github.com/pre-commit/pre-commit-hooks) — Standard pre-commit hook collection for whitespace and end-of-file sanity.
+- **Sibling Documentation Tools:**
+  - [`doclink-sentinel`](https://github.com/slopggobblercobbler81/doclink-sentinel) — Recursive hyperlink integrity checker and dead-link repair assistant.
+  - [`git-changelog-craft`](https://github.com/slopggobblercobbler81/git-changelog-craft) — Automated changelog and release notes generator from conventional commits.
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
