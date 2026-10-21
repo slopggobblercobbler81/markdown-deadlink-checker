@@ -1,0 +1,5 @@
+feat(parser): add support for mdx documentation file extension
+
+Expand scanner to detect and parse links in modern MDX documentation pages.
+
+Co-authored-by: Stephen Cork <stephencork81@gmail.com>
