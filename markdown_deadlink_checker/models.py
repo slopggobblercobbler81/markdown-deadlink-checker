@@ -80,3 +80,7 @@ class ScanSummary:
     @property
     def has_dead_links(self) -> bool:
         return self.dead_links > 0
+
+    @property
+    def has_errors(self) -> bool:
+        return len(self.errors) > 0

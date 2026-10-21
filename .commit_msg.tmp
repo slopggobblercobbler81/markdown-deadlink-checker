@@ -1,5 +1,5 @@
-feat(parser): add support for mdx documentation file extension
+feat(models): add has_errors property to ScanSummary
 
-Expand scanner to detect and parse links in modern MDX documentation pages.
+Add convenient boolean property checking presence of execution errors in scan summary.
 
 Co-authored-by: Stephen Cork <stephencork81@gmail.com>
